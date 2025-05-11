@@ -246,14 +246,15 @@ neurocart/
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 ## 👥 Contributors
 
-| Name         | Role                                  | GitHub Profile                             |       
-|--------------|------------------------------------------|--------------------------------------------|--------------
-| Mukhametzhan |  Fullstack+DevOps  | [GitHub](https://github.com/mukhametzhan-dev) |
-| Olzhas       | Backend+Database Engineer | [@OlzhasUsenbayev](https://github.com/OlzhasUssenbaev) | [GitHub](https://github.com/OlzhasUssenbaev) |
+| Name         | Role                     | GitHub Profile                                             |
+|--------------|--------------------------|------------------------------------------------------------|
+| Mukhametzhan | Fullstack + DevOps       | [@mukhametzhan-dev](https://github.com/mukhametzhan-dev)  |
+| Olzhas       | Backend + DB Engineer    | [@OlzhasUssenbaev](https://github.com/OlzhasUssenbaev)     |
 
 📌 **Project Link**: [NeuroCart](https://github.com/mukhametzhan-dev/NeuroCart)
+
+
 
 ```
