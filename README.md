@@ -24,7 +24,8 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 - Cloudinary media storage  
 - API documentation with Swagger UI
 - Advanced API docs with Redoc UI
-- Performance profiling with Django Silk  
+- Performance profiling with Django Silk
+- Cloudinary as media storage (CLOUDINARY](https://console.cloudinary.com)
 
 ### Frontend (React/Redux)
 - Responsive product listings  
