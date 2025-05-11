@@ -1,7 +1,7 @@
 
 # NeuroCart E-Commerce Platform
 
-![NeuroCart Logo](https://via.placeholder.com/150x50?text=NeuroCart) 
+![NeuroCart Logo](https://neurocart.netlify.app/assets/logo.png) 
 
 A full-stack e-commerce platform with Django REST Framework backend and React/Redux frontend, featuring AI-powered product recommendations.
 
