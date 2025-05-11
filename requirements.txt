@@ -1,0 +1,15 @@
+Django
+djangorestframework
+djangorestframework-simplejwt
+celery[redis]
+django-cors-headers
+pillow
+psycopg2-binary
+dj-database-url
+django-cloudinary-storage>=0.3
+cloudinary>=1.38
+gunicorn>=21.2
+drf-nested-routers
+drf_yasg
+django-silk
+google-genai

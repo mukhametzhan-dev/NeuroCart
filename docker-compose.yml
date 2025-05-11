@@ -1,0 +1,45 @@
+version: "3.9"
+
+x-env: &env
+  env_file: [.env]
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_DB:       onlinestore
+      POSTGRES_USER:     onlinestore_user
+      POSTGRES_PASSWORD: supersecret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports: ["6379:6379"]
+
+  web:
+    image: mukhametzhandev/neurocart:latest
+    <<: *env
+    depends_on: [postgres, redis]
+    expose: ["8000"]
+    restart: always
+
+  celery:
+    image: mukhametzhandev/neurocart:latest
+    <<: *env
+    command: celery -A onlinestore worker -l info
+    depends_on: [redis, postgres]
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    restart: always
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on: [web]
+
+volumes:
+  pgdata:
