@@ -119,6 +119,8 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 
 ```bash
 docker-compose up -d --build
+docker-compose logs --tail=1000 -f #Check logs
+docker ps #containers
 ```
 
 ### Frontend Setup
