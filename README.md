@@ -1,6 +1,4 @@
-Here's the corrected Markdown with proper line breaks after the second "Create and activate virtual environment" section:
 
-```markdown
 # NeuroCart E-Commerce Platform
 
 ![NeuroCart Logo](https://via.placeholder.com/150x50?text=NeuroCart) 
