@@ -38,6 +38,9 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 
 ### Backend
 <img src="https://img.icons8.com/?size=100&id=XPdRFanRZtNK&format=png&color=000000" style="height:100;width:100"/>
+<img src="https://img.icons8.com/?size=100&id=eOZdMdtLeGdv&format=png&color=000000" style="height:100;width:100"/>
+<img src="https://img.icons8.com/?size=100&id=pHS3eRpynIRQ&format=png&color=000000" style="height:100;width:100"/>
+<img src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000" style="height:100;width:100"/>
 - Python 3.11  
 - Django 4.2  
 - Django REST Framework  
