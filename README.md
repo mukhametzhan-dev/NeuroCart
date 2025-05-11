@@ -53,7 +53,15 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 - Celery  
 - Cloudinary  
 - DRF-YASG (Swagger docs)  
-- Django Silk (profiling)  
+- Django Silk (profiling)
+
+
+<div style="display:flex;" >
+<img src="https://miro.medium.com/v2/resize:fit:1400/0*7b0korzT1auZPZMU.gif" style="height:100;width:100"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOy1dXFCRv_iVBu4hz4QRSQAUtxAiwKfx8Q&s" style="height:100;width:100"/>
+<img src="https://raw.githubusercontent.com/themedotid/bootstrap-icon/HEAD/docs/bootstrap-icon-css.png" style="height:100;width:100"/>
+
+   </div>
 
 ### Frontend
 - React 18  
