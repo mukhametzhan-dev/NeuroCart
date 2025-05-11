@@ -12,7 +12,7 @@ from silk.profiling.profiler import silk_profile
 from rest_framework.throttling import ScopedRateThrottle
 from google import genai
 
-client = genai.Client(api_key="AIzaSyAOCV8Cg26raqqzN1-MYVU67TYeT8Pavh0")
+client = genai.Client(api_key="API_KEY_HERE")
 
 from rest_framework import serializers
 from .serializers import (
