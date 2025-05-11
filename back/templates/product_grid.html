@@ -1,0 +1,64 @@
+<!-- onlinestore/templates/product_grid.html -->
+{% extends "base.html" %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<div class="row mt-4">
+  <div class="col-md-3">
+    <!-- Filter Sidebar -->
+    <div class="card mb-4">
+      <div class="card-header">Filter by Category</div>
+      <div class="card-body">
+        <select class="form-select" id="categoryFilter" onchange="filterProducts()">
+          <option value="all" selected>All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+          <option value="books">Books</option>
+          <option value="home">Home</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="row" id="productContainer">
+      <!-- Example Product Card -->
+      <div class="col-md-4 mb-4 product-card" data-category="electronics">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone</h5>
+            <p class="card-text">$299.99</p>
+            <a href="{% url 'order_form' %}" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat product cards as needed -->
+      <div class="col-md-4 mb-4 product-card" data-category="fashion">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Trendy Jacket</h5>
+            <p class="card-text">$99.99</p>
+            <a href="{% url 'order_form' %}" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more product cards... -->
+    </div>
+  </div>
+</div>
+
+<script>
+  function filterProducts() {
+    var filter = document.getElementById('categoryFilter').value;
+    var cards = document.getElementsByClassName('product-card');
+    for (var i = 0; i < cards.length; i++) {
+      var category = cards[i].getAttribute('data-category');
+      if (filter === 'all' || category === filter) {
+        cards[i].style.display = 'block';
+      } else {
+        cards[i].style.display = 'none';
+      }
+    }
+  }
+</script>
+{% endblock %}

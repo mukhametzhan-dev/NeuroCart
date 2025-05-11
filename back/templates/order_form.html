@@ -1,0 +1,35 @@
+<!-- onlinestore/templates/order_form.html -->
+{% extends "base.html" %}
+{% block title %}Place Your Order{% endblock %}
+{% block content %}
+<div class="row justify-content-center mt-5">
+  <div class="col-md-8">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Place Your Order</h3>
+      </div>
+      <div class="card-body">
+        <form method="post" action="{% url 'order_create' %}">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="product" class="form-label">Product</label>
+            <select class="form-select" name="product" id="product">
+              <!-- In practice, populate this list dynamically -->
+              <option value="1">Smartphone - $299.99</option>
+              <option value="2">Trendy Jacket - $99.99</option>
+              <option value="3">Book - $19.99</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" name="quantity" id="quantity" class="form-control" min="1" value="1">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success">Submit Order</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

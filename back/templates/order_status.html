@@ -1,0 +1,26 @@
+<!-- onlinestore/templates/order_status.html -->
+{% extends "base.html" %}
+{% block title %}Your Orders{% endblock %}
+{% block content %}
+<h2>Your Orders</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Amount</th>
+      <th>Status</th>
+      <th>Order Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for order in orders %}
+    <tr>
+      <td>{{ order.id }}</td>
+      <td>{{ order.amount }}</td>
+      <td>{{ order.status }}</td>
+      <td>{{ order.order_date }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

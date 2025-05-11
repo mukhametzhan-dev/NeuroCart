@@ -1,0 +1,43 @@
+<!-- onlinestore/templates/login.html -->
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-body p-4">
+        <h2 class="card-title text-center mb-4">Login</h2>
+        <form method="post" action="{% url 'login' %}">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" required autocomplete="on">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required autocomplete="on">
+          </div>
+          <div class="d-grid gap-2 mt-4">
+            <button type="submit" class="btn btn-primary login-btn">Login</button>
+            <a href="{% url 'register' %}" class="btn btn-secondary register-btn">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card { border-radius: 10px; border: none; }
+  .login-btn, .register-btn {
+    padding: 10px 0; font-weight: 500; border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .login-btn:hover { transform: scale(1.05); background-color: #0056b3; }
+  .register-btn { background-color: #6c757d; }
+  .register-btn:hover { background-color: #5a6268; }
+  .form-control:focus {
+    border-color: #80bdff; box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+</style>
+{% endblock %}

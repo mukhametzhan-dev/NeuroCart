@@ -1,0 +1,53 @@
+<!-- onlinestore/templates/registration.html -->
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-body p-4">
+        <h2 class="card-title text-center mb-4">Register</h2>
+        <form method="post" action="{% url 'register' %}">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="password2" class="form-label">Confirm Password</label>
+            <input type="password" name="password2" class="form-control" required>
+          </div>
+          <div class="d-grid gap-2 mt-4">
+            <button type="submit" class="btn btn-primary register-btn">Register</button>
+            <a href="{% url 'login' %}" class="btn btn-secondary login-btn">Back to Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card { border-radius: 10px; border: none; }
+  .register-btn, .login-btn {
+    padding: 10px 0;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .register-btn:hover { transform: scale(1.05); background-color: #0056b3; }
+  .login-btn { background-color: #6c757d; }
+  .login-btn:hover { background-color: #5a6268; }
+  .form-control:focus {
+    border-color: #80bdff; box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+</style>
+{% endblock %}
