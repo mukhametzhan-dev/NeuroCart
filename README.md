@@ -247,10 +247,13 @@ neurocart/
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
+## 👥 Contributors
 
-Mukhametzhan - [@waveofem](https://t.me/waveofem) - 230103103@sdu.edu.kz
-Olzhas  - [@OlzhasUsenbayev](https://github.com/OlzhasUssenbaev) - github
+| Name         | Contact                                  | GitHub Profile                             |
+|--------------|------------------------------------------|--------------------------------------------|
+| Mukhametzhan | [@waveofem](https://t.me/waveofem)       | [GitHub](https://github.com/mukhametzhan-dev) |
+| Olzhas       | [@OlzhasUsenbayev](https://github.com/OlzhasUssenbaev) | [GitHub](https://github.com/OlzhasUssenbaev) |
 
-Project Link: [https://github.com/mukhametzhan-dev/NeuroCart](https://github.com/mukhametzhan-dev/NeuroCart)
+📌 **Project Link**: [NeuroCart](https://github.com/mukhametzhan-dev/NeuroCart)
+
 ```
