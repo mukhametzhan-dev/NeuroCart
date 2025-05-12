@@ -8,9 +8,9 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 ## Live Demo
 
 - Frontend: [https://neurocart.store](https://neurocart.store)  
-- Backend API: [https://kajet24.work.gd/api/swagger/]`
-- **NOTE ! SDU WIFI (SDU WIFI 5G) blocks this domains as newly registered, to access project consider using your OWN INTERNET
-- **
+- Backend API: [https://kajet24.work.gd/api/swagger]
+- **NOTE ! SDU WIFI (SDU WIFI 5G) blocks this domains as newly registered, to access project consider using your OWN INTERNET**
+- 
 
 
 ## Features
@@ -21,7 +21,7 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 - Order processing system  
 - AI-powered chat assistant (Gemini integration)  
 - Coupon/discount system  
-- Redis caching  
+- Redis caching  (products list)
 - Celery background tasks  
 - Cloudinary media storage  
 - API documentation with Swagger UI
@@ -80,7 +80,11 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 - Gunicorn  
 - Docker  
 - Docker Compose  
+## DEPLOYED IN DIGITAL OCEAN VPS UBUNTU LTS 
+![image](https://github.com/user-attachments/assets/c0a4f8b0-4af3-43f8-a44a-850707880265)
 
+## SSL CERTIFICATE
+Thanks to https://letsencrypt.org/ 
 ## Installation
 
 ### Backend Setup
