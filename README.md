@@ -241,13 +241,35 @@ neurocart/
 └── README.md
 ```
 
-## Contributing
+## UNIT Tests for throttling 
+```
+    "DEFAULT_THROTTLE_RATES": {
+        "anon": "60/min",   # гость — не более 60 запросов в минуту
+        "user": "200/min",  # авторизованный — 200
+        "heavy": "10/min",  # тяжелый запрос — 10 в минуту
+    },
+```
+RESULT 429 after 60 requests from anon
 
-1. Fork the repository  
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)  
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)  
-4. Push to the branch (`git push origin feature/AmazingFeature`)  
-5. Open a Pull Request  
+![image](https://github.com/user-attachments/assets/ba28eeff-d458-4e8d-b1bb-dffeef7dfcab)
+FOR AUTH USER
+```
+import time
+import requests
+URL = "http://kajet24.work.gd/api/products/"
+JWT_TOKEN = "HERE"
+headers = {
+    'Authorization': f'Bearer {JWT_TOKEN}',
+}
+for i in range(100):
+    response = requests.get(URL, headers=headers)
+    status = response.status_code
+    print(f"[{i+1}] Status: {status}")
+    if status == 429:
+        print("❌ Throttled!")
+        break
+    time.sleep(0.5) 
+```
 
 ## License
 
