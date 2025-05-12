@@ -7,8 +7,10 @@ A full-stack e-commerce platform with Django REST Framework backend and React/Re
 
 ## Live Demo
 
-- Frontend: [https://neurocart.netlify.app](https://neurocart.netlify.app)  
-- Backend API: `https://kajet24.work.gd/api/swagger/`
+- Frontend: [https://neurocart.store](https://neurocart.store)  
+- Backend API: [https://kajet24.work.gd/api/swagger/]`
+- **NOTE ! SDU WIFI (SDU WIFI 5G) blocks this domains as newly registered, to access project consider using your OWN INTERNET
+- **
 
 
 ## Features
